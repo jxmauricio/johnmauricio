@@ -1,12 +1,8 @@
 
 import './App.css';
-import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
-import Home from './pages/Home.js'
-import Projects from './pages/Projects.js'
-import Experience from './pages/Experience.js'
+import {BrowserRouter as Router} from "react-router-dom";
 import Navbar from "./components/Navbar.js"
 import Footer from "./components/Footer.js"
-import ProjectDisplay from './pages/ProjectDisplay';
 import AnimatedRoutes from './components/AnimatedRoutes';
 function App() {
   return (

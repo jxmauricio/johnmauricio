@@ -1,5 +1,4 @@
 import React from 'react'
-import TwitterIcon from "@mui/icons-material/Twitter"
 import "../styles/Footer.css"
 function Footer() {
   return (

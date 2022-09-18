@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
+import {Routes, Route, useLocation} from "react-router-dom";
 import Home from '../pages/Home.js'
 import Projects from '../pages/Projects.js'
 import Experience from '../pages/Experience.js'

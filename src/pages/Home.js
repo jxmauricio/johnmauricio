@@ -19,9 +19,9 @@ function Home() {
                 <p>
                     A software developer with a passion for creating.
                 </p>
-                <a href = 'https://www.linkedin.com/in/john-mauricio-b427a4216/' target="_blank"><LinkedInIcon/></a>
-                <a href = "mailto:jxmauric@ucsd.edu" target="_blank"><EmailIcon/></a>
-                <a href = "https://github.com/jxmauricio" target="_blank"><Github/></a>
+                <a href = 'https://www.linkedin.com/in/john-mauricio-b427a4216/' target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+                <a href = "mailto:jxmauric@ucsd.edu" target="_blank" rel="noreferrer"><EmailIcon/></a>
+                <a href = "https://github.com/jxmauricio" target="_blank" rel="noreferrer"><Github/></a>
             </div>
         </div>
         <div className = 'skills'>
