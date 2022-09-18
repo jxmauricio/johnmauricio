@@ -3,18 +3,25 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from "@mui/icons-material/Email"
 import Github from "@mui/icons-material/GitHub"
 import "../styles/Home.css"
+import Typewriter from "typewriter-effect"
+import {motion} from 'framer-motion'
 function Home() {
   return (
-    <div className = 'home'>
+    <motion.div className = 'home' inital={{opacity: 0}} animate = {{opacity: 1}} exit ={{opacity:0}}>
         <div className = 'about'>
-            <h2>Welcome, My Name is John</h2>
+            <h2>
+                <Typewriter className = "welcome" onInit = {(typewriter) => {
+                typewriter.typeString("Welcome, My Name is John").start()
+                }}
+                />
+            </h2>
             <div className = "prompt"> 
                 <p>
                     A software developer with a passion for creating.
                 </p>
-                <LinkedInIcon/>
-                <EmailIcon/>
-                <Github/>
+                <a href = 'https://www.linkedin.com/in/john-mauricio-b427a4216/' target="_blank"><LinkedInIcon/></a>
+                <a href = "mailto:jxmauric@ucsd.edu" target="_blank"><EmailIcon/></a>
+                <a href = "https://github.com/jxmauricio" target="_blank"><Github/></a>
             </div>
         </div>
         <div className = 'skills'>
@@ -22,11 +29,11 @@ function Home() {
             <ol className = "list">
                 <li className ='item'>
                     <h2>Front-End</h2>
-                    <span>Put SKills here</span>
+                    <span>React, HTML, CSS, JavaScript, AJAX, Version Control </span>
                 </li>
                 <li className ='item'>
-                    <h2>Back-End</h2>
-                    <span>put skills here</span>
+                    <h2>Data Science</h2>
+                    <span>Tensorflow, Keras, Numpy, Sci-kit Learn, Pandas, PostgreSQL</span>
                 </li>
                 <li className ='item'>
                     <h2>Languages</h2>
@@ -34,7 +41,7 @@ function Home() {
                 </li>
             </ol>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

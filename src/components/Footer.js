@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className = "footer">
         <div className = 'socialMedia'>
-            <TwitterIcon/>
+            
         </div>
         <p>&copy; 2022 johnmauricio.com</p>
     </div>
